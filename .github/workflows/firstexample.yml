@@ -12,5 +12,5 @@ jobs:
               run: ls
             - name: Read the file
               run: cat README.md
-            - name: Read the sh file
-              run: cat check.sh
+            - name: Run the sh file
+              run: ./check.sh
