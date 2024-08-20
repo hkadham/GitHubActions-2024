@@ -13,4 +13,6 @@ jobs:
             - name: Read the file
               run: cat README.md
             - name: Run the sh file
-              run: ./check.sh
+              run: |
+                  chmod 777 check.sh 
+                ./check.sh
