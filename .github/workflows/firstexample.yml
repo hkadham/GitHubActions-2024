@@ -15,4 +15,4 @@ jobs:
             - name: Run the sh file
               run: |
                   chmod 777 check.sh 
-                ./check.sh
+                  ./check.sh
