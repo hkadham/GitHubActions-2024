@@ -1,0 +1,1 @@
+echo "Just checking if we can run the shell script or not"
