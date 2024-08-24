@@ -10,5 +10,5 @@ jobs:
               run: ls -altr .github/workflows
             - name: Trigger the shell script check file
               run: | 
-                   chmod 755 check.sh
-                   ./check.sh
+                   chmod 755 .github/workflows/check.sh
+                   github/workflows/check.sh
