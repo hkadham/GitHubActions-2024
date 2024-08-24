@@ -7,5 +7,6 @@ jobs:
             - name:  Download the repo
               uses: actions/checkout@v4
             - name: Trigger the shell script check.sh
-              run: |
-                  check.sh
+              run: | 
+                   chmod 755 check.sh
+                   ./check.sh
