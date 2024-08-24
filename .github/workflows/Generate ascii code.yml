@@ -6,6 +6,7 @@ jobs:
         steps:
             - name: checkout the repo
               uses: actions/checkout@v4
+              
             - name: Download and install the cowsay pkg
               run: sudo apt-get install cowsay -y
             - name: Run the cowsay command or pkg
