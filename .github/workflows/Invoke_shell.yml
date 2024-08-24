@@ -5,9 +5,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name:  Download the repo
-              uses: actions/checkout@v4
+              uses: actions/checkout@v4                         
             - name : list repo files
-              run: ls -altr
+              run: ls -altr .github/workflows
             - name: Trigger the shell script check.sh
               run: | 
                    chmod 755 check.sh
