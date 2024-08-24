@@ -6,13 +6,14 @@ jobs:
         steps:
             - name: checkout the repo first
               uses: actions/checkout@v4
-            - name: welcome note
-              run: echo "My first githubactions job"
-            - name: list files
-              run: ls
-            - name: Read the file
-              run: cat README.md
-            - name: Run the sh file
-              run: |
-                  chmod 777 check.sh 
-                  ./check.sh
+            # - name: welcome note
+            #   run: echo "My first githubactions job"
+            # - name: list files
+            #   run: ls
+            # - name: Read the file
+            #   run: cat README.md
+            # - name: Run the sh file
+            #   run: |
+            #       chmod 777 check.sh 
+            #       ./check.sh
+            

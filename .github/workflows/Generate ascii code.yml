@@ -1,0 +1,17 @@
+name: Generate Ascii code for animal
+on: push
+jobs:
+    First_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout the repo
+              uses: actions/checkout@v4
+            - name: Download and install the cowsay pkg
+              run: sudo apt-get install cowsay -y
+            - name: Run the cowsay command or pkg
+              run: cowsay -f dragon "Run for cover,I am a DRAGON....RAWR">> dragon.txt
+            - name: Check if file exists
+              run: grep -i "dragon" dragon.txt
+            - name: open the file if exists 
+              run: cat dragon.txt
+
