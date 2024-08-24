@@ -12,6 +12,6 @@ jobs:
               run: cowsay -f dragon "Run for cover,I am a DRAGON....RAWR">> dragon.txt
             - name: Check if file exists
               run: grep -i "dragon" dragon.txt
-            - name: open the file if exists 
+            - name: open the file if exists or not
               run: cat dragon.txt
 
