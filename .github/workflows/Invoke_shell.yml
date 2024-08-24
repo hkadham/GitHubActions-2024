@@ -10,5 +10,5 @@ jobs:
               run: ls -altr
             - name: Trigger the shell script check.sh
               run: | 
-                   chmod 755 ./check.sh
+                   chmod 755 check.sh
                    ./check.sh
