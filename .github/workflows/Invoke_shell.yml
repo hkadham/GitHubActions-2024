@@ -7,9 +7,9 @@ jobs:
             - name:  Download the repo
               uses: actions/checkout@v4                         
             - name : list repo files
-              run: ls -altr
-              # run: ls -altr .github/workflows
+              # run: ls -altr
+              run: ls -altr .github/workflows
             - name: Trigger the shell script check file
               run: | 
-                   chmod 755 \..github/workflows/check.sh
-                   github/workflows/check.sh
+                   chmod +x check.sh
+                   ./check.sh
