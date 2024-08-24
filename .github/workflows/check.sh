@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "Just checking if we can run the shell script or not"
 echo "Installing the cowsay package "
 sudo apt-get install cowsay -y
