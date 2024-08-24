@@ -1,0 +1,11 @@
+name: Invoking shell script
+on: push
+jobs:
+    Trigger_shell_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name:  Download the repo
+              uses: actions/checkout@v4
+            - name: Trigger the shell script check.sh
+              run: |
+                  check.sh
